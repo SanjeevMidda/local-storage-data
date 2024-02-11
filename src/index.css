@@ -1,0 +1,85 @@
+* {
+  margin: 0px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  transition: all 400ms;
+  color: white;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  background-color: black;
+}
+
+.container {
+  border: 1px solid rgba(255, 255, 255, 0.554);
+  border-radius: 20px;
+  width: 50dvw;
+  height: 50dvh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+input {
+  width: 90%;
+  margin: 10px;
+  border-radius: 10px;
+  height: 30px;
+  background-color: rgba(128, 128, 128, 0.227);
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.content {
+  width: 93%;
+  background-color: rgba(128, 128, 128, 0.227);
+  height: 73%;
+  margin: 10px;
+  color: white;
+
+  h3 {
+    margin: 10px;
+    animation: addItem 1s;
+  }
+}
+
+.addItem {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    color: blue;
+  }
+
+  h1:hover {
+    transform: scale(1.4);
+    color: aqua;
+  }
+}
+
+.addItem:hover {
+  transform: scale(1.2);
+}
+
+@keyframes addItem {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
